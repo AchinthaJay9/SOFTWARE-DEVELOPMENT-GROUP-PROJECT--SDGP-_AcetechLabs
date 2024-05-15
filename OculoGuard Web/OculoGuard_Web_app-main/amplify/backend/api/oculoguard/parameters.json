@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "OculoGuard",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authoculoguard2251e9ec",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
